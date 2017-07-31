@@ -1,0 +1,182 @@
+@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../components/sass/_base.scss */
+body {
+  font-family: "Inika", serif;
+  font-size: 1.1em;
+}
+
+/* line 8, ../components/sass/_base.scss */
+#content {
+  color: #CC8E94;
+  font-size: 2em;
+}
+
+/* line 13, ../components/sass/_base.scss */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 20, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Patua One", sans-serif;
+  font-size: 3em;
+}
+
+/* line 25, ../components/sass/_base.scss */
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #507356;
+}
+@media (max-width: 700px) {
+  /* line 25, ../components/sass/_base.scss */
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+/* line 35, ../components/sass/_base.scss */
+h2 {
+  font-size: 1.5em;
+  color: #3E2B3D;
+}
+
+/* line 40, ../components/sass/_base.scss */
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #3E2B3D;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+/* line 48, ../components/sass/_base.scss */
+section {
+  padding: 20px 0;
+}
+
+/* line 52, ../components/sass/_base.scss */
+.div-table {
+  display: table;
+  width: auto;
+  background-color: #FFFFFF;
+  border: 1px solid #f2f2f2;
+  border-spacing: 5px;
+  /* cellspacing:poor IE support for  this */
+}
+
+/* line 59, ../components/sass/_base.scss */
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+
+/* line 64, ../components/sass/_base.scss */
+.div-table-col {
+  float: left;
+  /* fix for  buggy browsers */
+  display: table-column;
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* line 72, ../components/sass/_base.scss */
+.searchIcon {
+  width: 4%;
+  height: 4%;
+}
+
+/* line 76, ../components/sass/_base.scss */
+input {
+  width: 320px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+/* line 83, ../components/sass/_base.scss */
+.searchContainer {
+  background-color: #3E2B3D;
+  color: #FFFFFF;
+}
+
+/* line 4, ../components/sass/_modules.scss */
+.header img.logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15%;
+  max-width: 450px;
+  min-width: 200px;
+}

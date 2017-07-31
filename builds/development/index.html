@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xebia Search Widget</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="app/search/search-module.js"></script>
+    <script src="app/search/search-controller.js"></script>
+    <script src="app/search/service.js"></script>
+</head>
+
+<body ng-app="searchModule">
+    <section class="header">
+        <div class="container">
+            <img class="logo" src="images/xebiaLogo.png" alt="Xebia Logo">
+        </div>
+    </section>
+
+    <section ng-controller="SearchController">
+        <div class="container">
+            <h1></h1>
+            <h2 class="tagline"></h2>
+            <p class="searchContainer"><img class="searchIcon" src="images/searchIcon.png" alt="searchIcon">
+                <input type="text" style="color:white" ng-model="searchPolicy" name="policyInput" placeholder="name / policy number" /></p>
+
+            <div class="div-table">
+                <div class="div-table-row" ng-repeat="policy in policies | filter:searchPolicy">
+                    <div class="div-table-col" align="center">{{policy.clientName}}</div>
+                    <div class="div-table-col">{{policy.phone}}</div>
+                    <div class="div-table-col">{{policy.email}}</div>
+                    <div class="div-table-col">{{policy.policyNo}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+
+</html>
