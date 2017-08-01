@@ -1,0 +1,21 @@
+{
+  "name": "searchmodule",
+  "description": "Xebia client search module in angular 1.6",
+  "main": "",
+  "authors": [
+    "Mohd Sahil"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xebiaWidget/searchWidgetAngular1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "bootstrap": "^3.3.7"
+  }
+}
