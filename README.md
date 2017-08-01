@@ -1,8 +1,7 @@
 #Angular 1 search widget component
 
-Angular 1 search widget component. it searches based on client name or policy number
-
 Getting Started
+--------------
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -49,19 +48,6 @@ http://rubyinstaller.org/
 3. npm install
 4. bower install
 5.  gulp `Enter`
-   it will start the application on `http://localhost:8080/`
-        
+     -> it will start the application on `http://localhost:8080/`
 
-
-A step by step series of examples that tell you have to get a development env running
-
-
-
-open command prompt and point to your project directory and run the following commands
-
-npm install
-gulp
-it will run server on localhost:3000.
-
-Note: currently supporting chrome only
 
