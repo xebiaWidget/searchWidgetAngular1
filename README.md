@@ -48,7 +48,7 @@ http://rubyinstaller.org/
 2. cd searchWidgetAngular1
 3. npm install
 4. bower install
-5  gulp `Enter`
+5.  gulp `Enter`
    it will start the application on `http://localhost:8080/`
         
 
