@@ -1,4 +1,5 @@
 @import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+@import "https://fonts.googleapis.com/css?family=Assistant";
 /* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -124,6 +125,11 @@ section {
 }
 
 /* line 52, ../components/sass/_base.scss */
+table {
+  font-family: "Assistant", sans-serif;
+}
+
+/* line 55, ../components/sass/_base.scss */
 .div-table {
   display: table;
   width: auto;
@@ -133,42 +139,68 @@ section {
   /* cellspacing:poor IE support for  this */
 }
 
-/* line 59, ../components/sass/_base.scss */
+/* line 62, ../components/sass/_base.scss */
 .div-table-row {
   display: table-row;
   width: auto;
   clear: both;
+  -webkit-transition: height .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-family: "Assistant", sans-serif;
+  background-color: #f2f2f2;
 }
 
-/* line 64, ../components/sass/_base.scss */
+/* line 71, ../components/sass/_base.scss */
 .div-table-col {
   float: left;
   /* fix for  buggy browsers */
   display: table-column;
-  width: 200px;
-  background-color: #f2f2f2;
   padding: 20px;
+  width: 289px;
 }
 
-/* line 72, ../components/sass/_base.scss */
+/* line 78, ../components/sass/_base.scss */
 .searchIcon {
   width: 4%;
   height: 4%;
 }
 
-/* line 76, ../components/sass/_base.scss */
-input {
+/* line 82, ../components/sass/_base.scss */
+input[type=text] {
   width: 320px;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  border-style: none none none none;
+  font-size: 20px;
+  background-color: #443F5D;
+  background-image: url(img2.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: absolute;
+  color: #FFFFFF;
+  padding: 5px;
 }
 
-/* line 83, ../components/sass/_base.scss */
+/* line 97, ../components/sass/_base.scss */
+input[type=text]:focus {
+  outline: none;
+}
+
+/* line 100, ../components/sass/_base.scss */
 .searchContainer {
-  background-color: #3E2B3D;
+  background-color: #443F5D;
   color: #FFFFFF;
+}
+
+/* line 104, ../components/sass/_base.scss */
+.phoneno {
+  font-size: .7em;
+}
+
+/* line 107, ../components/sass/_base.scss */
+.hightlightFont {
+  font-size: 1.4em;
 }
 
 /* line 4, ../components/sass/_modules.scss */

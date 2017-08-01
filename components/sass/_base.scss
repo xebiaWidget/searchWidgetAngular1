@@ -48,7 +48,10 @@ p {
 section {
   padding: 20px 0;
 }
- 
+
+table {
+    font-family: $tableFont;
+}
 .div-table {
   display: table;         
   width: auto;         
@@ -60,27 +63,47 @@ section {
   display: table-row;
   width: auto;
   clear: both;
+  -webkit-transition: height .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-family: $tableFont;
+    background-color: $lightCreame;
 }
 .div-table-col {
   float: left; /* fix for  buggy browsers */
   display: table-column;         
-  width: 200px;         
-  background-color: $lightCreame;
   padding: 20px;
+  width: 289px;
 }
 
 .searchIcon{
     width: 4%;
     height: 4%;
 }
-input {
-    width:320px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 1px solid black;
+input[type=text] {
+    width: 320px;
+    box-sizing: border-box;
+    border-style: none none none none;
+    font-size: 20px;
+    background-color: $megenta;
+    background-image: url(img2.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    color: $white;
+    padding:5px;
+}
+input[type=text]:focus {
+    outline:none;
 }
 .searchContainer {
-    background-color: $purple;
+    background-color: $megenta;
     color: $white
+}
+.phoneno {
+    font-size: .7em;
+}
+.hightlightFont {
+    font-size: 1.4em;
 }

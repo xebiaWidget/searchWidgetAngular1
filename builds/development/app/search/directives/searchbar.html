@@ -1,0 +1,25 @@
+<section class="header">
+    <div class="container"> <img class="logo" src="images/xebiaLogo.png" alt="Xebia Logo"> </div>
+</section>
+<section ng-controller="SearchController">
+    <div class="container">
+        <h1></h1>
+        <h2 class="tagline"></h2>
+        <p class="searchContainer"><img class="searchIcon" src="images/searchIcon.png" alt="searchIcon">
+            <input type="text" style="color:white" ng-model="searchPolicy" name="policyInput" placeholder=" Name / Policy Number" /> </p>
+        <table class="table table-striped">
+            <thead> </thead>
+            <tbody>
+                <tr ng-repeat="policy in policies | filter:searchPolicy">
+                    <td class="hightlightFont">{{policy.clientName}}
+                        <br/> <span class="phoneno"><img src="images/phone.png" alt="Phone icon" /> {{policy.phone}}
+          </td>
+        <td>{{policy.email}}</td>
+        <td><img src="images/download.png" alt="Download icon" /> Policy No {{policy.policyNo}}</td>
+      </tr>
+    </tbody>
+  </table>
+        
+    </div>
+  
+</section>
